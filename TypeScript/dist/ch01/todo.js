@@ -12,7 +12,6 @@
         ];
         return todos;
     }
-    // Todo: Todo type 지정
     // crud methods
     function fetchTodos() {
         const todos = fetchTodoItems();
