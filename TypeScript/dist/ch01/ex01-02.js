@@ -1,4 +1,45 @@
 "use strict";
 (() => {
     console.log("==========기본 타입==========");
+    console.log("==========string==========");
+    var string = 'hello';
+    console.log(string);
+    console.log(typeof string);
+    console.log("==========number==========");
+    var number = 30;
+    console.log(number);
+    console.log(typeof number);
+    console.log("==========boolean==========");
+    var boolean = true;
+    console.log(boolean);
+    console.log(typeof boolean);
+    console.log("==========object==========");
+    var object = { title: Object, done: false };
+    console.log(object);
+    console.log(typeof object);
+    console.log("==========array==========");
+    var array1 = ['array1', 'array2'];
+    console.log(array1);
+    console.log(typeof array1);
+    var array2 = ['array1', 'array2'];
+    console.log(array2);
+    console.log(typeof array2);
+    console.log("==========tuple==========");
+    // 갯수가 정해져 있는 배열, 각요소의 타입이 지정된 배열
+    var tuple = ['tuple1', 'tuple2'];
+    console.log(tuple);
+    console.log(typeof tuple);
+    console.log("==========any==========");
+    //! 가능한 사용하지 않는다
+    var any = 'any1';
+    console.log(any);
+    console.log(typeof any);
+    console.log("==========null==========");
+    var nul = null;
+    console.log(nul);
+    console.log(typeof nul);
+    console.log("==========undefined==========");
+    var undefine = undefined;
+    console.log(undefine);
+    console.log(typeof undefine);
 })();
