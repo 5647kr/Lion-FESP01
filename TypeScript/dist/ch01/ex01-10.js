@@ -3,6 +3,7 @@
     console.log("==========인터페이스 사용==========");
     // 변수에 타입 지정
     var user1 = { name: '김철수', age: 30 };
+    console.log(user1);
     // 함수 매개 변수에 타입 지정
     var getAge = function (user1) {
         return user1.age;

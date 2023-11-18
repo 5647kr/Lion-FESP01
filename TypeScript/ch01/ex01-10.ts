@@ -9,6 +9,7 @@
 
   // 변수에 타입 지정
   var user1: User1 = {name: '김철수', age: 30}
+  console.log(user1)
 
   // 함수 매개 변수에 타입 지정
   var getAge = function (user1: User1) {
