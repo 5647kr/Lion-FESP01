@@ -1,2 +1,10 @@
-"use strict";
-// ex02-05/math.js 복사
+export function sum(data) {
+    return data.a + data.b;
+}
+export function substract(data) {
+    return data.a - data.b;
+}
+function divide(data) {
+    return data.a / data.b;
+}
+export default { sum, substract, divide };
