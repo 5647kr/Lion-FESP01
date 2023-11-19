@@ -1,7 +1,6 @@
 "use strict";
 (() => {
     console.log("==========const Enum==========");
-    console.log(ClassName);
     function getSchedule(subject) {
         if ("javascript" /* ClassName.JS */ === subject) {
             return `${"javascript" /* ClassName.JS */} 수업은 4일 교육, 2일 프로젝트`;

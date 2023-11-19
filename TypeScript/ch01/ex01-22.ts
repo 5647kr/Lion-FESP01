@@ -8,8 +8,6 @@
     React = 'react'
   }
 
-  console.log(ClassName)
-
   function getSchedule(subject: ClassName): string | undefined {
     if(ClassName.JS === subject) {
       return `${ClassName.JS} 수업은 4일 교육, 2일 프로젝트`;
