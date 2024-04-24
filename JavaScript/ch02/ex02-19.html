@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>익명함수&콜백함수</title>
+  <script type="text/javascript">
+    window.onload = function () {
+      console.log('load 이벤트 발생');
+      var btn = document.querySelector('button');
+      
+      btn.addEventListener('click', () => {
+        console.log('click 이벤트 발생');
+        var msg = '버튼 누른 후 3초 지남!';
+        setTimeOut(() => {
+          console.log(msg);
+        }, 1000 * 3);
+        console.log('click 이벤트 처리 완료');
+      })
+      console.log('load 이벤트 처리 완료');
+    }
+  </script>
+</head>
+<body>
+  <h1>익명/콜백 함수 사용 예제</h1>
+  <input type="text">
+  <button>전송</button>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ex01-01 개발 환경 확인</title>
+
+  <script type="text/JavaScript">
+    console.log('hello world1');
+    
+    window.onload = function () {
+      console.log('hello world4');
+
+      let btn = document.querySelector('button');
+      btn.addEventListener('click', event => {
+        console.log('버튼 클릭1', event.clientX, event.clientY)
+      });
+    }
+  </script>
+  <script src="ex01-01 개발 환경 확인.js"></script>
+</head>
+<body>
+  <h1>hello JavaScript</h1>
+
+  <button>클릭</button>
+
+  <script type="text/JavaScript">
+    console.log('hello world2');
+    let btn = document.querySelector('button');
+    btn.addEventListener('click', event => {
+      console.log('버튼 클릭2', event.clientX, event.clientY)
+    });
+  </script>
+</body>
+</html>
