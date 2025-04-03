@@ -1,7 +1,7 @@
 //* BigInt
 
-var maxNum = Number.MAX_VALUE;
-var maxSafeNum = Number.MAX_SAFE_INTEGER;
+var maxNum = Number.MAX_VALUE; // Number로 표현할 수 있는 가장 큰 값
+var maxSafeNum = Number.MAX_SAFE_INTEGER; // Number에서 안전하게 표현할 수 있는 가장 큰 정수
 
 var b1 = 12345n;
 var b2 = BigInt(maxSafeNum);
