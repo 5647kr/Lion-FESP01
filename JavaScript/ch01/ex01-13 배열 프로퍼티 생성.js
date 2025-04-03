@@ -8,9 +8,10 @@ function printArr(arr){
 // 지정한 객체의 모든 속성을 출력한다.
 function printObj(obj){
   for(var prop in obj) {
-    console.log(prop, obj[prop]);
+    console.log("forIn문:", prop, obj[prop]);
   }
 }
+
 //! for-in문 에는 length가 나오지 않는다.
 
 var arr = ['zero', 'one', 'two'];
@@ -28,7 +29,7 @@ arr.name = 'kim';
 arr['age'] = 30;
 
 
-// 속성 추가 전용 메소드(enumerable, writable, configurable)
+// 속성 추가 전용 메소드: defineProperty(enumerable, writable, configurable)
 // default: false
 
 // 첫번째 인자: 속성을 추가할 객체
@@ -44,5 +45,5 @@ Object.defineProperty(arr, 'age', {
 
 
 //* 2개 주석 처리하면서 비교하기
-// printArr(arr);
+printArr(arr);
 printObj(arr);
