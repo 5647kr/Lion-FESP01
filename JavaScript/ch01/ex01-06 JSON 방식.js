@@ -14,8 +14,8 @@ console.log(typeof obj1, obj1);
 
 // 객체를 문자열로 변환
 var strObj1 = JSON.stringify(obj1);
-console.log(typeof strObj1, strObj1, strObj1.age);
+console.log("strObj:", typeof strObj1, strObj1, strObj1.age);
 
 //문자열을 객체로 변환
 var objObj1 = JSON.parse(strObj1);
-console.log(typeof objObj1, objObj1, objObj1.age);
+console.log("objObj:", typeof objObj1, objObj1, objObj1.age);
