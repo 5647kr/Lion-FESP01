@@ -7,8 +7,8 @@
 
 // 정수, 실수, 음수, 양수 구별이 없다
 
-console.log(typeof 10, 10);
-console.log(typeof 3.14, 3.14);
+console.log("숫자[Number]: ", typeof 10, 10);
+console.log("숫자[Number]: ", typeof 3.14, 3.14);
 
 
 //* 문자열(String)
@@ -16,10 +16,10 @@ console.log(typeof 3.14, 3.14);
 // 큰 따옴표(""), 작은 따옴표('')안에 기술한다.
 
 //! 따옴표 안에 따옴표 작성
-console.log("김철수가 '안녕'이라고 말했다");
-console.log('김철수가 "안녕"이라고 말했다');
-console.log("김철수가 \"안녕\"이라고 말했다");
-console.log(`김철수가 "안녕"이라고 말했다`);
+console.log("문자열[String]: ", "김철수가 '안녕'이라고 말했다");
+console.log("문자열[String]: ", '김철수가 "안녕"이라고 말했다');
+console.log("문자열[String]: ", "김철수가 \"안녕\"이라고 말했다");
+console.log("문자열[String]: ", `김철수가 "안녕"이라고 말했다`);
 //console.log("김철수가 "안녕"이라고 말했다"); //!Error
 
 
@@ -28,8 +28,10 @@ console.log(`김철수가 "안녕"이라고 말했다`);
 // 참(true) 또는 거짓(false) 둘 중 하나의 값을 가지는 데이터이다
 //! 헷갈리는 Bloonean 값 
 
-console.log(null == undefined);
-console.log(true == 1);
+console.log("논리값: ", null == undefined);
+console.log("논리값: ", null === undefined);
+console.log("논리값: ", true == 1);
+console.log("논리값: ", true === 1);
 
 
 //* null
@@ -38,7 +40,7 @@ console.log(true == 1);
 //! 데이터 타입은 Object이다.
 
 var nullVal = null;
-console.log(typeof nullVal, nullVal);
+console.log("null: ", typeof nullVal, nullVal);
 
 
 //* undefined
@@ -47,4 +49,6 @@ console.log(typeof nullVal, nullVal);
 //! 값이 할당되지 않은 변수의 타입과 값 모두 undefined로 지정한다.
 
 var undefinedValue;
-console.log(typeof undefinedValue, undefinedValue);
+console.log("undefined: ", typeof undefinedValue, undefinedValue);
+
+// typeof는 항상 문자열을 반환한다.
