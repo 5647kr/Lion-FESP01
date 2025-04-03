@@ -24,7 +24,7 @@ var arr3 = ['zero', 'one', 'three', 'four'];
 var arr4 = arr3.splice(2, 0, 'two');
 
 // slice([begin[, end]])
-// 배열의 begin부터 end까지(end 미포함) 요소를 복사해서 새로운 배열을 반환한다.
+// 배열의 begin부터 end까지(end -1 인덱스까지) 요소를 복사해서 새로운 배열을 반환한다.
 
 // begin 생략시 0
 // begin이 음수일 경우 배열의 뒤에서 부터 복사
