@@ -2,8 +2,8 @@ console.log("----------나머지 매개변수1----------");
 
 // 함수의 매개변수에 적용(마지막 매개변수 하나만 사용 가능)
 
-function fn1(a, b, ...rest) {
-  console.log(a, b, rest);
+function fn1(a, b) {
+  console.log(a, b);
 }
 
 fn1();
@@ -12,10 +12,20 @@ fn1(2, 3);
 fn1(4, 5, 6);
 fn1(7, 8, 9, 10, 11);
 
+function fn2(a, b, ...rest) {
+  console.log(a, b, rest);
+}
+
+fn2();
+fn2(1);
+fn2(2, 3);
+fn2(4, 5, 6);
+fn2(7, 8, 9, 10, 11);
+
 // 마지막 매개변수 하나만 사용 가능하다.
-function fn2(a, b, ...args) {}
-//function fn2(a, b, ...args, c) {}//!Error
-//function fn2(a, b, ...args, ...arg) {} //!Error
+function fn3(a, b, ...args) {}
+//function fn3(a, b, ...args, c) {}//!Error
+//function fn3(a, b, ...args, ...arg) {} //!Error
 
 console.log("----------나머지 매개변수2----------");
 
@@ -34,4 +44,5 @@ var user = {
 };
 
 var {name, age, ...etc} = user;
+console.log(name, age, etc);
 console.log(name, age, etc.phone, etc.address);
