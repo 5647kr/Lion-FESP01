@@ -1,11 +1,17 @@
 console.log("----------기본값 매개변수1----------");
 
 // TODO: hoisting 단원.
-function sum(a, b = 0) { // 값이 없을경우 undefined가 아닌 0으로 지정
+function sum1(a, b) { // 값이 없을경우 undefined가 아닌 0으로 지정
   return a + b;
 }
-console.log(sum(10, 20));
-console.log(sum(30));
+console.log(sum1(10, 20));
+console.log(sum1(30));
+
+function sum2(a, b = 0) { // 값이 없을경우 undefined가 아닌 0으로 지정
+  return a + b;
+}
+console.log(sum2(10, 20));
+console.log(sum2(30));
 
 console.log("----------기본값 매개변수2----------");
 
