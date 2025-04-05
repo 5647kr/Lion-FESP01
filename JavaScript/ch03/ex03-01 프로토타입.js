@@ -1,12 +1,17 @@
 // 국어, 영어 점수를 매개변수로 받는 생성자 함수
 var Score = function(kor, eng){
-  this. kor = kor;
-  this. eng = eng;
-  this. sum = function () {
+  this.kor = kor;
+  this.eng = eng;
+  this.sum = function () {
     return this.kor + this.eng
   };
+
+  // this.avg = function () {
+  //   return this.sum() / 2
+  // }
 };
 
+// 따로 분리해 두는게 좋다
 Score.prototype.avg = function () {
   return this.sum() / 2;
 }
