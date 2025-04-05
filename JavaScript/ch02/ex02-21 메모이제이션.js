@@ -4,7 +4,7 @@ var isPrime = function(num){
   // 캐시를 위한 코드
   isPrime._cache = isPrime._cache || {};
   if(isPrime._cache[num] !== undefined) {
-    
+    return isPrime._cache[num]
   }else {
     // 소수 판별 코드
     var prime = true;
