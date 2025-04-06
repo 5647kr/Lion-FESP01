@@ -6,9 +6,9 @@
 <link rel="shortcut icon" href="../../favicon.ico">
 <script>
 	window.onload = function(){
-		document.querySelector('button').onclick = function(){
-      getTime();
-      getTimeJson();
+		document.querySelector('button').onclick = async function(){
+      await getTime();
+      await getTimeJson();
     };
 	};
   
@@ -17,6 +17,24 @@
   // querystring: msg=time
   // 서버의 응답 포맷: Text
 	async function getTime(){
+    try {
+      const response = await fetch("http://localhost:33080/time?msg=time&delay=1000")
+      if(response.ok) {
+        const data = await response.text();
+        append(data)
+      } else {
+        console.error(response)
+      }
+    } catch(error) {
+      console.log(error)
+    }
+	};
+
+  // method: POST
+  // url: /timejson
+  // body: {msg: 'timejson'}
+  // 서버의 응답 포맷: JSON
+	async function getTimeJson(){
     try{
       const body = {msg: 'timejson'};
       const response = await fetch('http://localhost:33080/timejson', {
@@ -28,19 +46,13 @@
         const data = await response.json();
         appendJson(data)
       } else {
+        // 404, 500 에러
         console.error(response);
       }
       } catch(err) {
+        // 네트워크 오류
         console.log(err);
       }
-	};
-
-  // method: POST
-  // url: /timejson
-  // body: {msg: 'timejson'}
-  // 서버의 응답 포맷: JSON
-	function getTimeJson(){
-    
   }
   
 	function append(str){
