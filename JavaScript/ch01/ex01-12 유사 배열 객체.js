@@ -21,6 +21,11 @@ console.log("----------유사 배열 객체2----------");
 //  - length 속성 추가
 //  - 0부터 시작해서 1씩 증가하는 속성 추가
 
+// error
+// for(let i = 0; i < arr2.length; i++) {
+//   console.log(arr2[i])
+// }
+
 var arr2 = {
   0: 'orange',
   1: 'yellow', 
