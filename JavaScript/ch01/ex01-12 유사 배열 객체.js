@@ -1,22 +1,22 @@
-console.log("----------유사 배열 객체1----------");
+console.log("========== 유사 배열 객체1 ==========");
 
 // 지정한 배열의 모든 요소를 출력한다.
 function printArr(arr){
   for(var i=0; i<arr.length; i++){
-    console.log(i, arr[i]);
+    console.log(`i: ${i} / arr[${i}]: ${arr[i]}`);
   }
 }
 
 var colorArr = ['orange', 'yellow', 'green'];
 colorArr.push('black');
 colorArr.push('white');
-console.log(colorArr.shift());
-console.log(colorArr.pop());
+console.log("colorArr.shift():", colorArr.shift());
+console.log("colorArr.pop():", colorArr.pop());
 printArr(colorArr);
 
-// TODO: protoeype 단원. 배열의 모든 메소드는 Array.prototype 속성에 정의되어 있음
+// TODO: prototype 단원. 배열의 모든 메소드는 Array.prototype 속성에 정의되어 있음
 
-console.log("----------유사 배열 객체2----------");
+console.log("========== 유사 배열 객체2 ==========");
 
 //  - length 속성 추가
 //  - 0부터 시작해서 1씩 증가하는 속성 추가
@@ -42,6 +42,16 @@ var arr2 = {
     // this
     // this[this.length] = elem;
     // this.length++
+  },
+
+  unshift: function(elem) {
+    // unshift: 배열의 처음에 새로운 요소 추가.
+    // length 1추가되어야 한다.
+    arr2.length++
+    for(var i = 0; i < arr2.length; i++) {
+      arr2[arr2.length - i] = arr2[arr2.length - 1 - i]
+    }
+    arr2[0] = elem;
   },
   
   shift: function() {
@@ -83,18 +93,26 @@ var arr2 = {
   }
 };
 
-console.log("----------puch fuc1----------");
+console.log("----- push fuc1 -----");
 arr2.push('black');
 printArr(arr2);
 
-console.log("----------puch fuc2----------");
+console.log("----- push fuc2 -----");
 arr2.push('white');
 printArr(arr2);
 
-console.log("----------shift fuc----------");
+console.log("----- unshift fuc1 -----");
+arr2.unshift('red');
+printArr(arr2);
+
+console.log("----- unshift fuc2 -----");
+arr2.unshift('white');
+printArr(arr2);
+
+console.log("----- shift fuc -----");
 console.log(arr2.shift());
 printArr(arr2);
 
-console.log("----------pop fuc----------");
+console.log("----- pop fuc -----");
 console.log(arr2.pop());
 printArr(arr2);
