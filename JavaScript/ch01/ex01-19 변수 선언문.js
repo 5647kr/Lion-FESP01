@@ -1,4 +1,4 @@
-console.log("----------변수 선언문----------");
+console.log("========== 변수 선언문 ==========");
 
 // TODO: hoisting 단원. var로 선언한 변수가 함수단위의 접근이 가능한 이유
 /**
@@ -42,5 +42,5 @@ function max(n1, n2){
   return maxNum;
 }
 
-console.log(max(10, 20));   // 20
-console.log(max(200, 30));  // 200
+console.log("maxNum:", max(10, 20));   // 20
+console.log("maxNum:", max(200, 30));  // 200
