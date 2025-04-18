@@ -1,4 +1,4 @@
-console.log("----------Tagged template literal1----------");
+console.log("========== Tagged template literal1 ==========");
 
 var user = {
   userName: '김철수',
@@ -14,15 +14,17 @@ var user = {
 주소: 서울시
 */
 var info1 = user.userName + '님의 정보입니다.\n나이: ' + user.age + '\n전화번호: ' + user.phone + '\n주소: ' + user.address;
-console.log(info1);
+console.log("info1:", info1);
 
 var info2 = `${user.userName}님의 정보입니다.
 나이: ${user.age}
 전화번호: ${user.phone}
 주소: ${user.address}`;
-console.log(info2);
 
-console.log("----------Tagged template literal2----------");
+console.log("info2:", info2);
+
+
+console.log("========== Tagged template literal2 ==========");
 
 function userInfo(string, userName, age, phone, address){
   console.log(string);
@@ -41,10 +43,10 @@ function userInfo(string, userName, age, phone, address){
   return string[0] + userName + string[1] + age + string[2] + phone + string[3] + address + string[4];
 }
 
-var kim = userInfo`
+var info3 = userInfo`
   ${user.userName}님의 정보입니다.
   나이: ${user.age}
   전화번호: ${user.phone}
   주소: ${user.address}
 `;
-console.log(kim);
+console.log("info3:", info3);
