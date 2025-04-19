@@ -18,12 +18,16 @@ var kim = new Score(100, 90, 80);
 var lee = new Score(90, 80, 60);
 
 // 두 사람의 총점과 평균을 출력하시오.
-console.log(kim.sum(), kim.avg());
-console.log(lee.sum(), lee.avg());
+console.log("kim.sum():", kim.sum());
+console.log("kim.avg():", kim.avg());
+console.log("lee.sum():", kim.sum());
+console.log("lee.avg():", kim.avg());
 
 // 수학점수를 10점 올린 후 총점과 평균 출력
 kim.math += 10;
 lee.math += 10;
-console.log(kim.sum(), kim.avg());
-console.log(lee.sum(), lee.avg());
+console.log("kim.sum():", kim.sum());
+console.log("kim.avg():", kim.avg());
+console.log("lee.sum():", kim.sum());
+console.log("lee.avg():", kim.avg());
 
