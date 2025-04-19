@@ -27,11 +27,11 @@ console.log("info2:", info2);
 console.log("========== Tagged template literal2 ==========");
 
 function userInfo(string, userName, age, phone, address){
-  console.log(string);
-  console.log(userName);
-  console.log(age);
-  console.log(phone);
-  console.log(address);
+  console.log("string: ", string);
+  console.log("userName: ", userName);
+  console.log("age: ", age);
+  console.log("phone: ", phone);
+  console.log("address: ", address);
 
   if(age >= 19 && age <= 34){
     age = '청년';
