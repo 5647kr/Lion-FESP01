@@ -1,16 +1,19 @@
-console.log("----------함수4----------");
+console.log("========== 함수4 ==========");
 
 // 동적으로 생성된 프로퍼티를 가질 수 있다.
-function add(x, y){
-  add.result = x + y;
-  return add.result;
+function fuc1(x, y){
+  fuc1.result = x + y;
+  return fuc1.result;
 }
 
-console.log(add(10, 20), add(10, 20));
+console.log("fuc1(10, 20):", fuc1(10, 20));
+console.log("fuc1(10, 20):", fuc1(10, 20));
 
-var result = add(30, 40);
-console.log(result, result);
+var result = fuc1(30, 40);
+console.log("result:", result);
+console.log("result:", result);
 
 // 마지막 계산 결과를 출력
-add(50, 60);
-console.log(add.result);
+fuc1(50, 60);
+console.log("fuc1.result:", fuc1.result);
+console.log("fuc1.result:", fuc1.result);

@@ -1,13 +1,13 @@
-console.log("----------함수----------");
+console.log("========== 함수2 ==========");
 
 // 함수의 인자로 전달될 수 있다.
-function foo(fn){
+function fuc1(fn){
 	console.log('foo 호출.');
   fn();
 };
 
-function bar(){
+function fuc2(){
 	console.log('bar 호출.');
 };
 
-foo(bar);
+fuc1(fuc2);
