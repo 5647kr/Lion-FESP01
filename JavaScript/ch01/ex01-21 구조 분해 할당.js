@@ -1,4 +1,4 @@
-console.log("----------구조 분해 할당1----------");
+console.log("========== 구조 분해 할당1 ==========");
 
 var colors = ['yellow', 'green', 'blue'];
 var [one, two, three, four='red'] = colors;
@@ -15,7 +15,8 @@ console.log(one, two, three, four);
 // console.log(count);
 // setCount(count+1);
 
-console.log("----------구조 분해 할당2----------");
+
+console.log("========== 구조 분해 할당2 ==========");
 
 var kim = { userName: '김철수', userAge: 35 };
 console.log(kim.userName, kim.userAge);
@@ -23,16 +24,19 @@ console.log(kim.userName, kim.userAge);
 var {userAge: age, userName} = kim;
 console.log(userName, age);
 
-console.log("----------구조 분해 할당3----------");
+
+console.log("========== 구조 분해 할당3 ==========");
 
 // 선언된 변수에 적용
 var first, second;
 [first, second] = [100, 200, 300];
 console.log(first, second);
+
 ({first, second} = {first: 'orange', second: 'green', third: 'yellow'});
 console.log(first, second);
 
-console.log("----------구조 분해 할당4----------");
+
+console.log("========== 구조 분해 할당4 ==========");
 
 // 기본값 할당(undefined 대체)
 
@@ -41,13 +45,15 @@ var {userName, userAge=20} = {userName: '이영희'};
 
 console.log(userName, userAge);
 
-console.log("----------구조 분해 할당5----------");
+
+console.log("========== 구조 분해 할당5 ==========");
 
 // 변수명 변경과 기본값 할당
 var {userName: accountName='게스트', userAge: age=20} = {userAge: 30};
 console.log(accountName, age);
 
-console.log("----------구조 분해 할당6----------");
+
+console.log("========== 구조 분해 할당6 ==========");
 
 // 변수값 교환
 var a = 100;
@@ -55,15 +61,19 @@ var b = 200;
 var temp = a;
 a = b;
 b = temp;
-console.log(a, b);
+console.log("a:100 -> ", a);
+console.log("b:200 -> ", b);
 
-console.log("----------구조 분해 할당7----------");
+
+console.log("========== 구조 분해 할당7 ==========");
 
 // 변수값 교환(구조 분해 할당)
 [a, b] = [b, a]; // [a, b] = [100, 200]
-console.log(a, b);
+console.log("a:200 -> ", a);
+console.log("b:100 -> ", b);
 
-console.log("----------구조 분해 할당8----------");
+
+console.log("========== 구조 분해 할당8 ==========");
 
 // 복합 객체에서 사용
 var userList = [
