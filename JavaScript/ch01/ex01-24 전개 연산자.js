@@ -1,4 +1,4 @@
-console.log("----------전개 연산자1----------");
+console.log("========== 전개 연산자1 ==========");
 
 var colors = ['two', 'three', 'four'];
 // var newColors = colors;
@@ -14,18 +14,21 @@ if(colors !== newColors){
   console.log('리렌더링.');
 }
 
-console.log("----------전개 연산자2----------");
+
+console.log("========== 전개 연산자2 ==========");
 
 var user = {name: '김철수', age: 30, done: false};
 var newUser = {...user, done: true};
 
-console.log(user, newUser);
-console.log(newUser, user === newUser);
+console.log("user:", user);
+console.log("newUser:", newUser);
+console.log("user === newUser:", user === newUser);
 if(user !== newUser){
   console.log('리렌더링.');
 }
 
-console.log("----------전개 연산자3----------");
+
+console.log("========== 전개 연산자3 ==========");
 
 // 함수에서 사용
 function sum(x, y){
