@@ -1,3 +1,5 @@
+console.log("========== 가변인자 ==========");
+
 console.log(Math.min(10,100));	// 10
 console.log(Math.min(200,100,50,60,80,30));//30
 console.log(Math.min(100,20,60,50,70)); // 20
