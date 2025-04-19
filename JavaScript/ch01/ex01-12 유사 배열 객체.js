@@ -42,6 +42,9 @@ var arr2 = {
     // this
     // this[this.length] = elem;
     // this.length++
+
+
+    // return Array.prototype.push.call(this)
   },
 
   unshift: function(elem) {
@@ -52,6 +55,17 @@ var arr2 = {
       arr2[arr2.length - i] = arr2[arr2.length - 1 - i]
     }
     arr2[0] = elem;
+
+
+    // this
+    // for(var i  = 0; i < this.length - 1; i++) {
+    //   this[this.length - i] = this[this.length - i - 1]
+    // }
+    // this.length++;
+    // this[0] = elem
+
+
+    // return Array.prototype.unshift.call(this)
   },
   
   shift: function() {
@@ -74,6 +88,8 @@ var arr2 = {
     // this.length--;
     // delete this[this.length];
     // return first;
+
+    // return Array.prototype.shift.call(this)
   },
   
   pop: function() {
@@ -90,6 +106,8 @@ var arr2 = {
     // this.length--;
     // delete this[this.length];
     // return last;
+
+    // return Array.prototype.pop.call(this)
   }
 };
 
