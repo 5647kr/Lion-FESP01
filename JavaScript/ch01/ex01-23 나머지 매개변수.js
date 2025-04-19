@@ -1,4 +1,4 @@
-console.log("----------나머지 매개변수1----------");
+console.log("========== 나머지 매개변수1 ==========");
 
 // 함수의 매개변수에 적용(마지막 매개변수 하나만 사용 가능)
 
@@ -27,13 +27,15 @@ function fn3(a, b, ...args) {}
 //function fn3(a, b, ...args, c) {}//!Error
 //function fn3(a, b, ...args, ...arg) {} //!Error
 
-console.log("----------나머지 매개변수2----------");
+
+console.log("========== 나머지 매개변수2 ==========");
 
 // 구조 분해 할당에서 사용
 var [first, second, ...last] = [100, 200, 300, 400, 500];
 console.log(first, second, last);
 
-console.log("----------나머지 매개변수3----------");
+
+console.log("========== 나머지 매개변수3 ==========");
 
 // 객체에서 사용가능하다
 var user = {
