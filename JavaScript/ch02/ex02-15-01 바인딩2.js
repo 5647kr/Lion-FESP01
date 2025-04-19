@@ -1,3 +1,4 @@
+console.log("========== 바인딩2 ==========");
 // ex02-15.js 복사
 var count = 0;
 var counter = {

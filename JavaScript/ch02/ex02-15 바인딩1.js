@@ -1,3 +1,5 @@
+console.log("========== 바인딩1 ==========");
+
 var count = 0;
 var counter = {
 	count: 0,
