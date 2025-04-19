@@ -19,6 +19,26 @@ var arr2 = arr1.splice();  // 빈배열 반환
 console.log("arr1.splice():", arr2);
 
 
+/**
+ * 
+ * var arr2 = arr1.splice(3, 1);
+console.log("arr1.splice(3, 1):", arr2);
+
+var arr2 = arr1.splice(1);
+console.log("arr1.splice(1):", arr2);
+
+var arr2 = arr1.splice();
+console.log("arr1.splice():", arr2);
+
+같은 변수명을 사용해서 오류일거 같지만 var 변수 선언시 실제론
+var arr2
+arr2 = arr1.splice(3, 1);
+arr2 = arr1.splice(1);
+arr2 = arr1.splice();
+
+위와 같이 동작한다.
+ */
+
 console.log("========== slice 연산자 ==========");
 
 var arr3 = ['zero', 'one', 'three', 'four'];
