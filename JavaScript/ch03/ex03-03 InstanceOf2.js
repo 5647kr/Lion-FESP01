@@ -12,10 +12,10 @@ Person.prototype.setName = function (name) {
 var kim = new Person('김철수');
 var lee = new Person('이영희');
 
-console.log(kim.getName());	// 김철수
-console.log(lee.getName());	// 이영희
+console.log("kim.getName():", kim.getName());	// 김철수
+console.log("lee.getName():", lee.getName());	// 이영희
 kim.setName('홍길동');
-console.log(kim.getName());	// 홍길동
+console.log("kim.getName():", kim.getName());	// 홍길동
 
-console.log(kim.getName === lee.getName);	// true
-console.log(kim.setName === lee.setName);	// true
+console.log("kim.getName === lee.getName:", kim.getName === lee.getName);	// true
+console.log("kim.setName === lee.setName:", kim.setName === lee.setName);	// true
