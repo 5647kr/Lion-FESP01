@@ -1,35 +1,33 @@
-﻿
-
-// 고등학교 성적관리 생성자 함수(총점과 평균 계산)
-function HighSchool(kor, eng){
+﻿// 고등학교 성적관리 생성자 함수(총점과 평균 계산)
+function HighSchool2(kor, eng){
   this.kor = kor;
   this.eng = eng;
 }
 
-HighSchool.prototype.sum = function () {
+HighSchool2.prototype.sum = function () {
   return this.kor + this.eng;
 }
 
-HighSchool.prototype.avg = function () {
+HighSchool2.prototype.avg = function () {
   return this.sum() / 2;
 }
 
-var s1 = new HighSchool(100, 91);
-console.log(s1.sum());
-console.log(s1.avg());
+var score1 = new HighSchool2(100, 91);
+console.log("score1.sum():", score1.sum());
+console.log("score1.avg():", score1.avg());
 
 
 // 대학교 성적관리 생성자 함수(총점, 평균, 학점 계산)
 
-function College(kor, eng) {
+function College2(kor, eng) {
   // this.kor = kor;
   // this.eng = eng;
 
-  HighSchool.call(this, kor, eng);
+  HighSchool2.call(this, kor, eng);
 }
 
-// College가 HighSchool을 상속받는다
-inherite(HighSchool, College);
+// College2가 HighSchool2을 상속받는다
+inherite(HighSchool2, College2);
 
 function inherite(Parent, Child) {
   // 방법1
@@ -44,7 +42,7 @@ function inherite(Parent, Child) {
   Child.prototype.constructor = Child;
 }
 
-College.prototype.grade = function(){
+College2.prototype.grade = function(){
 	var grade = 'F';
 	var avg = this.avg();
 	if(avg >= 90){
@@ -59,7 +57,7 @@ College.prototype.grade = function(){
 	return grade;
 };
 
-var s2 = new College(80, 71);
-console.log(s2.sum());
-console.log(s2.avg());
-console.log(s2.grade());
+var score2 = new College2(80, 71);
+console.log("score2.sum():", score2.sum());
+console.log("score2.avg():", score2.avg());
+console.log("score2.grade():", score2.grade());
