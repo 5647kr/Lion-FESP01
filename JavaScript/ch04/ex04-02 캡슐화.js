@@ -13,13 +13,13 @@ var Counter = function(){
   }
 };
 
-var c = new Counter();
-c.ride();
-c.ride();
+var person = new Counter();
+person.ride();
+person.ride();
 
 // for(var i = 0; i < 40; i++) {
 //   c.ride();
 // }
-c.count += 40;
+person.count += 40;
 
-console.log('전체 탑승자', c.getCount());
+console.log('전체 탑승자', person.getCount());
