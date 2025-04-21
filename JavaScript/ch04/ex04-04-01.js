@@ -15,4 +15,5 @@ Function.prototype.partial = function () {
 }
 
 var sum1 = sum.partial(20, 80);
-console.log(sum1(30), sum1(50));
+console.log("sum1(30):", sum1(30));
+console.log("sum1(50)", sum1(50));
