@@ -25,18 +25,17 @@ var todolist = [
 
 // 완료된 할일 목록
 var doneList = [];
-for(var i = 0; i < todolist.length; i++) {
-  if(todolist[i].done === true) {
+for(let i = 0; i < todolist.length; i++) {
+  if(todolist[i].done) {
     doneList.push(todolist[i])
   }
 }
 console.log('완료된 할일 목록', doneList);
 
 // 남은 할일 목록
-//var reaminList = []; //!오타
 var remainList = [];
-for(var i = 0; i < todolist.length; i++) {
-  if(todolist[i].done !== true) {
+for(let i = 0; i < todolist.length; i++) {
+  if(!todolist[i].done) {
     remainList.push(todolist[i])
   }
 }
@@ -44,39 +43,41 @@ console.log('남은 할일 목록', remainList);
 
 // 남은 할일 수
 var remainCount = 0;
-for(var i = 0; i < remainList.length; i++) {
-  remainCount++;
+for(let i = 0; i < todolist.length; i++) {
+  if(!todolist[i].done) {
+    remainCount++;
+  }
 }
 console.log('남은 할일 수', remainCount);
 
 // _id=2인 할일
 var todo = {};
-for(var i = 0; i < todolist.length; i++) {
+for(let i = 0; i < todolist.length; i++) {
   if(todolist[i]._id === 2) {
-    todo = todolist[i].title;
+    todo = todolist[i].title
   }
 }
 console.log('_id=2인 할일', todo);
 
 // _id=3인 할일의 index
 var todoIndex = 0;
-for(var i = 0; i < todolist.length; i++) {
+for(let i = 0; i < todolist.length; i++) {
   if(todolist[i]._id === 3) {
-    todoIndex = todolist[i]._id -1;
+    todoIndex = todolist.indexOf(todolist[i])
   }
 }
 console.log('_id=3인 할일의 index', todoIndex);
 
 // 남은 할일이 하나라도 있는가?
 var hasTodo = false;
-if (remainCount > 0) {
-  hasTodo = true;
+if(remainCount > 0) {
+  hasTodo = true
 }
 console.log('남은 할일이 하나라도 있는가?', hasTodo);
 
 // 할일이 모두 완료 되었는가?
 var busy = true;
-if (remainCount !== 0) {
+if(remainCount > 0) {
   busy = false
 }
 console.log('할일이 모두 완료 되었는가?', busy);
