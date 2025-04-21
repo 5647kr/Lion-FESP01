@@ -6,20 +6,26 @@ var Score = function(kor, eng){
     return this.kor + this.eng
   };
 
+
   // this.avg = function () {
   //   return this.sum() / 2
   // }
 };
 
 // 따로 분리해 두는게 좋다
+// 인스턴스는 생성자 함수로 부터 생성되는 객체
+// 그 인스턴스는 생성자 함수가 호출되는 기간동안에만 this
 Score.prototype.avg = function () {
   return this.sum() / 2;
 }
 
-var s1 = new Score(100, 90);
-var s2 = new Score(80, 70);
+var score1 = new Score(100, 90);
+var score2 = new Score(80, 70);
 
-console.log(s1.sum());
-console.log(s1.avg());
-console.log(s2.sum());
-console.log(s2.avg());
+console.log("score1.sum():", score1.sum());
+console.log("score1.avg():", score1.avg());
+console.log("score2.sum():", score2.sum());
+console.log("score1.sum === score2.sum:", score1.sum === score2.sum);
+console.log("score1.avg === score2.avg:", score1.avg === score2.avg);
+console.log("score1.constructor:", score1.constructor);
+console.log("score2.constructor:", score2.constructor);
