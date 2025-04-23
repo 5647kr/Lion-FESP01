@@ -17,7 +17,7 @@
       (function(i) {
         btns[i].addEventListener('click', function(){
           // console.log("btn-" + i + " 클릭");
-          console.log(`btn-${i} 클릭`)
+          console.log(`즉시실행함수: btn-${i} 클릭`)
         });
       })(i);
 		}
@@ -25,14 +25,14 @@
     // forEach()
     btns.forEach(function (elem, i) {
       elem.addEventListener('click', function(){
-        console.log("btn-" + i + " 클릭");
+        console.log("forEach문: btn-" + i + " 클릭");
     })
 	});
 
   // let
   for(let i=0; i<btns.length; i++){
     btns[i].addEventListener('click', function(){
-      console.log("btn-" + i + " 클릭");
+      console.log("for-let문: btn-" + i + " 클릭");
 		})
   }
 }

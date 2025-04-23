@@ -1,22 +1,23 @@
 // var alert = '출입 금지!';
 // console.log(alert);
 
-alert('작업 완료.');
+alert('전역1: 작업 완료.');
 
-function fn1() {
-  var alert = '출입 금지!';
+function fuc1() {
+  var alert = 'fuc1: 출입 금지!';
   console.log(alert);
 }
-fn1();
+fuc1();
+
 
 (function () {
-  var alert = '출입 금지!';
+  var alert = '즉시실행함수: 출입 금지!';
   console.log(alert);
 })();
 
-function fn2(alert) {
+function fuc2(alert) {
   console.log(alert);
 }
-fn2('출입 금지!!!');
+fuc2('fuc2: 출입 금지!!!');
 
-alert('작업 완료.');
+alert('전역2: 작업 완료.');
