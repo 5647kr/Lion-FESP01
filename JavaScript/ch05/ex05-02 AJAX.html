@@ -17,8 +17,11 @@
   // querystring: msg=time
   // 서버의 응답 포맷: Text
 	function getTime(){
+    // 1. xhr 객체 생성
     var xhr = new XMLHttpRequest();
+    // 2. 요청, get방식, 주소, 비동기 통신하면 true
     xhr.open("GET", "http://localhost:33080/time?msg=hello", true);
+    // 3. 응답이 돌아오면 어떻게 할건지 결정
     xhr.onload = function() {
       var result = xhr.responseText;
       append(result)
