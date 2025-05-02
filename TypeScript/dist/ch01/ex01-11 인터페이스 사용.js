@@ -1,6 +1,6 @@
 "use strict";
 (() => {
-    console.log("==========인터페이스 사용==========");
+    console.log("========== 인터페이스 사용 ==========");
     class HighSchool {
         constructor(kor, eng) {
             this.kor = kor;
@@ -14,5 +14,6 @@
         }
     }
     const user = new HighSchool(100, 90);
-    console.log(user.sum(), user.avg());
+    console.log("user.sum():", user.sum());
+    console.log("user.avg():", user.avg());
 })();

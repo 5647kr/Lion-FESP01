@@ -1,6 +1,6 @@
 "use strict";
 (() => {
-    console.log("==========인덱스 시그니처==========");
+    console.log("========== 인덱스 시그니처 ==========");
     var user1 = {
         name: '김철수',
         email: 'kim@kim.com',

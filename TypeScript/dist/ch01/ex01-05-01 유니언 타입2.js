@@ -1,7 +1,7 @@
 "use strict";
 (() => {
-    console.log("==========유니언 타입(union type)과 타입 가드==========");
-    function print(msg) {
+    console.log("========== 유니언 타입(union type)과 타입 가드 ==========");
+    function fuc1(msg) {
         if (typeof msg === 'string') { //* 타입 가드
             console.log(`${msg} 글자 수: ${msg.length}`);
         }
@@ -12,7 +12,7 @@
             console.log(`${msg} : ${msg ? '참' : '거짓'}`);
         }
     }
-    print('world');
-    print(100);
-    print(false);
+    fuc1('world');
+    fuc1(100);
+    fuc1(false);
 })();
