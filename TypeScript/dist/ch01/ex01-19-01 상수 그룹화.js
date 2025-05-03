@@ -1,10 +1,10 @@
 "use strict";
 (() => {
-    console.log("==========상수 그룹화==========");
+    console.log("========== 상수 그룹화 ==========");
     const ClassName = {
-        JS: 'javascript',
-        TS: 'typescript',
-        React: 'react'
+        JS: "javascript",
+        TS: "typescript",
+        React: "react",
     };
     function getSchedule(subject) {
         if (ClassName.JS === subject) {
@@ -16,6 +16,6 @@
     }
     const jsSchedule = getSchedule(ClassName.JS);
     const tsSchedule = getSchedule(ClassName.TS);
-    console.log(jsSchedule);
-    console.log(tsSchedule);
+    console.log("jsSchedule:", jsSchedule);
+    console.log("tsSchedule:", tsSchedule);
 })();

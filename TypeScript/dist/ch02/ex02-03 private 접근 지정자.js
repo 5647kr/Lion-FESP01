@@ -1,6 +1,6 @@
 "use strict";
 (() => {
-    console.log("==========private 접근 지정자==========");
+    console.log("========== private 접근 지정자 ==========");
     class HighSchool {
         constructor(kor, eng) {
             this.kor = kor;
@@ -14,5 +14,8 @@
         }
     }
     var score1 = new HighSchool(100, 91);
-    console.log('평균', score1.avg());
+    console.log("평균:", score1.avg());
+    // 잘못된 사용
+    // score1.eng = 99;
+    // console.log("평균:", score1.avg());
 })();

@@ -1,6 +1,6 @@
 "use strict";
 (() => {
-    console.log("==========타입스크립트의 클래스==========");
+    console.log("========== TS 클래스 정의 ==========");
     class HighSchool {
         constructor(kor, eng) {
             this.kor = kor;

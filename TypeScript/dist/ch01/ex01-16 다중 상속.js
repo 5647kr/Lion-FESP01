@@ -1,5 +1,5 @@
 "use strict";
-(function () {
+(() => {
     console.log("==========인터페이스 다중 상속==========");
     var todo1 = {
         title: '할일1',
@@ -13,6 +13,6 @@
         createAt: new Date(),
         updateAt: new Date(),
     };
-    console.log(todo1);
-    console.log(todo2);
+    console.log("todo1:", todo1);
+    console.log("todo2:", todo2);
 })();
