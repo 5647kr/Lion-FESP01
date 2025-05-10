@@ -57,14 +57,14 @@
 
   console.log("========== null ==========");
 
-  var null1 = null;
+  var null1:null = null;
 
   console.log("null1:", null1);
   console.log("typeof null1:", typeof null1);
 
   console.log("========== undefined ==========");
 
-  var undefined1;
+  var undefined1: undefined;
 
   console.log("undefined1:", undefined1);
   console.log("typeof undefined1:", typeof undefined1);
