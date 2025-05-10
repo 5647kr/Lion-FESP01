@@ -14,7 +14,6 @@
   fuc1("hello");
   fuc2(100);
 
-
   function fuc3(msg: number | string): void {
     console.log("fuc3:", msg);
   }
