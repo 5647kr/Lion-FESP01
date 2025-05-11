@@ -2,7 +2,6 @@
   console.log("========== 인덱스 시그니처 ==========");
 
   // 회원가입
-
   interface User {
     name: string;
     email: string;
