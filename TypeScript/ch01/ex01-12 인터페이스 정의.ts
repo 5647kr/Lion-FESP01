@@ -43,7 +43,7 @@
     param.done = !param.done;
   };
 
-  //todo1.id = 3; // id는 변화면 안되는 값이다 -> interface로
+  //todo1.id = 3; // id는 변하면 안되는 값이다 -> interface에 readonly를 설정한다.
   todo1.title = "집에 가자";
 
   togglefuc(todo1);
