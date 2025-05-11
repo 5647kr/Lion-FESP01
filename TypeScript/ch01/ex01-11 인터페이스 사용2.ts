@@ -1,14 +1,14 @@
-(()=>{
-  console.log("========== 인터페이스 사용 ==========");
+(() => {
+  console.log("========== 인터페이스 사용2 ==========");
 
   // 클래스의 타입 지정
   // 클래스명 뒤에 implements 키워드를 추가한다.
 
   interface Score {
-    kor: number,
-    eng: number,
-    sum(): number,
-    avg(): number
+    kor: number;
+    eng: number;
+    sum(): number;
+    avg(): number;
   }
 
   class HighSchool implements Score {
@@ -27,8 +27,7 @@
     }
   }
 
-  const user = new HighSchool(100, 90)
+  const user = new HighSchool(100, 90);
   console.log("user.sum():", user.sum());
   console.log("user.avg():", user.avg());
 })();
-
