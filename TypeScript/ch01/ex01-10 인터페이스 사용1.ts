@@ -1,24 +1,23 @@
 (() => {
-  console.log("========== 인터페이스 사용 ==========");
-  //1. 변수, 함수의 매개변수, 함수의 리턴 타입
+  console.log("========== 인터페이스 사용1 ==========");
+  // 변수, 함수의 매개변수, 함수의 리턴 타입
 
   interface User1 {
     name: string;
     age: number;
   }
 
-  //2. 변수에 타입 지정
+  // 1. 변수에 타입 지정
   var user1: User1 = { name: "김철수", age: 30 };
   console.log("user1:", user1);
 
-  //3. 함수 매개 변수에 타입 지정
-  var getAge = function(user1: User1) {
+  // 2. 함수 매개 변수에 타입 지정
+  var getAge = function (user1: User1) {
     return user1.age;
   };
 
-
-  //4. 함수의 리턴 타입 지정
-  var createUser = function(name: string, age: number): User1 {
+  // 3. 함수의 리턴 타입 지정
+  var createUser = function (name: string, age: number): User1 {
     return { name, age };
   };
 
