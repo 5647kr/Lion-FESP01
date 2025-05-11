@@ -13,7 +13,6 @@
     content: "할일1",
   };
 
-
   // 타입 확장
   type ListInfo = List & {
     id: number;
