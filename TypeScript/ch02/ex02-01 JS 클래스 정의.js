@@ -11,6 +11,7 @@
       return this.kor + this.eng;
     }
     avg() {
+      // 평균은 소수 첫째 자리에서 반올림
       return Math.round(this.sum() / 2);
     }
   }
