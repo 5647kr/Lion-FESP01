@@ -2,6 +2,9 @@
   console.log("========== private 접근 지정자 ==========");
 
   interface Score {
+    // kor: number;
+    // eng: number;
+    // sum(): number;
     avg(): number;
   }
 
