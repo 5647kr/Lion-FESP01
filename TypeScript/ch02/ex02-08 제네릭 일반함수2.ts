@@ -4,10 +4,10 @@
   // 함수를 생성할 때 함수에서 사용할 매개변수, 리턴 타입을 정의하지 않고 호출하는 시점에 원하는 타입을 지정해서 사용한다.
 
   // 제네릭 사용 이후
-  function fuc3<T>(msg: T): T {
+  function fuc1<T>(msg: T): T {
     return msg;
   }
 
-  console.log(fuc3<string>("hello"));
-  console.log(fuc3<number>(100));
+  console.log(fuc1<string>("hello"));
+  console.log(fuc1<number>(100));
 })();
