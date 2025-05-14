@@ -23,7 +23,6 @@
 
   console.log("todo2:", todo2);
 
-
   // 예시
   const extodo1: Todo = {
     title: "할일 1",
