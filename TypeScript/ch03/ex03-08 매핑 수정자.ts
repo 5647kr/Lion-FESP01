@@ -20,7 +20,7 @@
     // [p in keyof Todo]?: Todo[p]
 
     // 4. 제네릭
-    [P in keyof T]?: T[P]
+    [P in keyof T]?: T[P];
   };
 
   // todo1
